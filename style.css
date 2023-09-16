@@ -1,0 +1,557 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: underground;
+    src: url("UndergroundNF.otf");
+}
+
+.main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.nameSection {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 7% 4% 0% 8%;
+    font-family: underground;
+}
+
+.nameSection h1:nth-child(1) {
+    font-size: 3.3rem;
+    letter-spacing: 3px;
+    opacity: 0.84;
+}
+
+.nameSection h1:nth-child(2) {
+    font-size: 5.2rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-top: 3px;
+}
+
+.nameSection span {
+    -webkit-text-stroke: 2px #EDBA47;
+    color: transparent;
+    letter-spacing: 6px;
+    opacity: 0.84;
+    position: relative;
+    transition: color 0.5s ease-in-out;
+}
+
+.nameSection span:hover {
+    color: #EDBA47;
+    transition: color 0.5s ease-in-out;
+}
+
+.picture {
+    background-color: #D9D9D9;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.designation p {
+    font-size: 1.1rem;
+    background-color: #EDBA47;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 4px 6px;
+    display: inline-block;
+}
+
+.desc {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 27px;
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.b1 {
+    padding-top: 27px;
+}
+
+.moreAbout {
+    width: 30%;
+    background: #F3B934;
+    padding: 12px 12px;
+    border-radius: 200px;
+    font-size: 1.14rem;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.picture .navigation {
+    height: 250px;
+    width: 49px;
+    background-color: #F3B934;
+    display: flex;
+    position: fixed;
+    border-radius: 200px;
+    z-index: 5;
+    right: 22px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.navigation a img {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.picture .pf {
+    height: 100vh;
+    width: 50vw;
+    object-fit: cover;
+    position: relative;
+    right: 80px;
+}
+
+.secondMain {
+    height: 100vh;
+    display: flex;
+    background-color: #e3e3e3;
+}
+
+.secondMain .leftSecondMain {
+    width: 19%;
+    background: #F3B934;
+    display: flex;
+    flex-direction: column;
+}
+
+.secondMain .leftSecondMain .leftshortlinks {
+    background-color: #F3B934;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    top: 80px
+}
+
+.leftshortlinks a {
+    text-decoration: none;
+    color: #000;
+    font-size: 27px;
+}
+
+.leftshortlinks a:hover {
+    color: #fff
+}
+
+.leftshortlinks,
+.leftshortlinks-2,
+.leftshortlinks-3 a.active {
+    color: #fff;
+}
+
+.whiteColor {
+    color: #fff;
+}
+
+.topLeftSecondMain {
+    height: 35%;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.topLeftSecondMain img {
+    width: 88%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rightSecondMain,
+.rightThirdMain,
+.rightFourthMain {
+    width: 81%;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    left: 400px;
+    padding-right: 220px;
+}
+
+.rightSecondMain .headRightSecondMain h1 {
+    letter-spacing: 6px;
+}
+
+.rightThirdMain .headRightThirdMain h1 {
+    letter-spacing: 6px;
+}
+
+.rightFourthMain .headRightFourthMain h1 {
+    letter-spacing: 6px;
+}
+
+.rightSecondMain .headRightSecondMain {
+    font-size: 3.7rem;
+    font-weight: 900;
+    font-family: underground;
+    height: 140px;
+    width: 1000px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    top: 15px;
+    right: 50px;
+}
+
+.rightThirdMain .headRightThirdMain {
+    font-size: 3.7rem;
+    font-weight: 900;
+    font-family: underground;
+    height: 140px;
+    width: 1000px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    top: 15px;
+    right: 50px;
+}
+
+.rightSecondMain .paraRightSecondMain p {
+    font-size: 2rem;
+}
+
+.rightSecondMain .paraRightSecondMain span {
+    font-weight: 900;
+    font-size: 2.2rem;
+}
+
+.rightSecondMain .para2RightSecondMain {
+    position: relative;
+    bottom: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5;
+    font-weight: lighter;
+    font-size: 1.1rem;
+}
+
+.twoColumnRightSecondMain {
+    display: flex;
+    justify-content: center;
+}
+
+.leftofTwoColumnRightSecondMain {
+    height: 210px;
+    width: 700px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box1,
+.box2 {
+    display: flex;
+}
+
+.box1-1,
+.box1-2,
+.box2-1,
+.box2-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    width: 350px;
+    height: 105px;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 0.5px solid #3e3e3e;
+}
+
+.box1-1 h1,
+.box1-2 h1,
+.box2-1 h1,
+.box2-2 h1 {
+    color: #F3B934;
+}
+
+.box1-1 p,
+.box1-2 p,
+.box2-1 p,
+.box2-2 p {
+    color: #fff;
+}
+
+.thirdMain {
+    height: 100vh;
+    display: flex;
+    background-color: #d7d4d4;
+}
+
+.thirdMain .leftThirdMain {
+    width: 19%;
+    background: #F3B934;
+    display: flex;
+    flex-direction: column;
+}
+
+.thirdMain .leftThirdMain .leftshortlinks-2 {
+    background-color: #F3B934;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    top: 80px
+}
+
+.leftshortlinks-2 a {
+    text-decoration: none;
+    color: #000;
+    font-size: 27px;
+}
+
+.leftshortlinks-2 a:hover {
+    color: #fff
+}
+
+.thirdMain .leftThirdMain .topLeftThirdMain {
+    height: 35%;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.topLeftThirdMain img {
+    width: 88%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.resumeMainSection,
+.resumeExperienceSection {
+    width: 400px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    color: #191919;
+    gap: 10px
+}
+
+.mainResume-1-ed .ed-Head {
+    font-size: 1.6rem;
+    position: relative;
+    top: 10px;
+    background-color: #EDBA47;
+    padding: 2px 3px;
+    display: inline-block;
+    width: 170px;
+}
+
+.mainResume-1-exp .exp-Head {
+    font-size: 1.6rem;
+    position: relative;
+    top: 10px;
+    background-color: #EDBA47;
+    padding: 2px 3px;
+    display: inline-block;
+    width: 177px;
+}
+
+.mainResume-1-ed .schoolname {
+    font-size: 1.3rem;
+    padding-bottom: 6px;
+}
+
+.mainResume-2-ed .schoolname {
+    font-size: 1.3rem;
+    padding-bottom: 6px;
+}
+
+.mainResume-1-exp .schoolname {
+    font-size: 1.3rem;
+    padding-bottom: 6px;
+}
+
+.mainResume-2-exp .schoolname {
+    font-size: 1.3rem;
+    padding-bottom: 6px;
+}
+
+.mainResume-1-ed,
+.mainResume-2-ed,
+.mainResume-1-exp,
+.mainResume-2-exp {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 240px;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5;
+}
+
+.fullResume {
+    display: flex;
+    gap: 80px;
+    position: relative;
+    top: 20px
+}
+
+.fourthMain {
+    height: 100vh;
+    display: flex;
+    background-color: #e3e3e3;
+}
+
+.fourthMain .leftFourthMain {
+    width: 19%;
+    background: #F3B934;
+    display: flex;
+    flex-direction: column;
+}
+
+.fourthMain .leftFourthMain .leftshortlinks-3 {
+    background-color: #F3B934;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    top: 80px
+}
+
+.leftshortlinks-3 a {
+    text-decoration: none;
+    color: #000;
+    font-size: 27px;
+}
+
+.leftshortlinks-3 a:hover {
+    color: #fff
+}
+
+.topLeftFourthMain {
+    height: 35%;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.topLeftFourthMain img {
+    width: 88%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rightFourthMain .headRightFourthMain {
+    font-size: 3.7rem;
+    font-weight: 900;
+    font-family: underground;
+    height: 140px;
+    width: 1000px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    top: 15px;
+    right: 50px;
+}
+
+.feelFree {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+    padding-top: 20px;
+}
+
+.feelFree span {
+    font-weight: normal;
+}
+
+.contacts-main {
+    height: 250px;
+    width: 350px;
+    background-color: #d7d2d2;
+    margin: 0 auto;
+    position: relative;
+    top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contacts-main .linkedin-acc {
+    align-self: flex-end;
+}
+
+.contacts-main .github-acc,
+.contacts-main .linkedin-acc,
+.contacts-main .instagram-acc {
+    width: 90px;
+    height: 90px;
+    border-radius: 70px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.contacts-main .github-acc img,
+.contacts-main .linkedin-acc img,
+.contacts-main .instagram-acc img {
+    width: 55px;
+    height: 55px;
+}
+
+@keyframes icon-animate-social {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-2px);
+    }
+}
+
+.contacts-main .github-acc:hover,
+.contacts-main .linkedin-acc:hover,
+.contacts-main .instagram-acc:hover {
+    animation: icon-animate-social;
+}
+
+.rightFourthMain .patience {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0 auto;
+    padding-top: 45px;
+    font-size: small;
+}
