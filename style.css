@@ -89,6 +89,13 @@
     font-family: 'Josefin Sans', sans-serif;
     border-color: transparent;
     cursor: pointer;
+    transition: transform 1000ms;
+}
+
+.moreAbout:hover,
+.moreAbout:focus-visible {
+    transform: translateY(-0.3rem);
+    transition: transform 250ms
 }
 
 .picture .navigation {
